@@ -33,7 +33,7 @@
 }
 
 .logo__img {
-  background-image: url(/img/Logo.svg);
+  background-image: url(img/Logo.svg);
   display: block;
   width: 58px;
   height: 58px;
