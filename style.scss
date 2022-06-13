@@ -1,0 +1,288 @@
+
+//!===============================  Start  ===============================//
+$dark: #202020;
+$gray: #B2B2B2;
+$dark1: #000000;
+$dark2: #4F4F4F;
+
+//!===============================  End  ===============================//
+
+//?======================================   ======================================//
+
+//!===============================  Wraper start  ===============================//
+
+.wrapper {
+    //ширина
+    width: 100%;
+    // максимальная ширина
+    max-width: 1186px;
+    //выравнивание по центру
+    margin: 0 auto;
+    //подключение шрифта
+    font-family: 'Ubuntu', sans-serif;
+    
+//!===============================  Wraper end  ===============================//   
+
+//?======================================   ======================================//
+
+//!===============================  Header start  ===============================//
+}
+.header {
+    
+    //делает эллементы блочными и выстраивает в строку 
+    display: flex;
+    //Равномерно распределите предметы. Первый элемент находится на одном уровне с началом, последний - на одном уровне с концом
+    justify-content: space-between;
+    //
+    box-sizing: border-box;
+    //
+    align-items: center;
+    //внутренний отступ 
+    padding: 0 15px 0 16px;
+    font-weight: 700;
+    padding-top: 53px;
+
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &__img{
+        
+        background-image: url(/img/Logo.svg);
+        display: block;
+        width: 58px;
+        height: 58px;
+        margin-right: 25px;      
+}
+
+    &__text{
+        font-size: 24px;
+        color: $dark; 
+
+    }
+}
+.nav {
+    
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+		// .nav__link
+
+		&__link {
+        margin-left: 15px;
+        text-decoration: none;
+        font-size: 14px;
+        align-items: center;
+		}
+
+        &__btn{
+            background-color: #5528FF;
+            border-radius: 5px;
+            padding: 10px 15px;
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 14px;
+            border: none;
+            font-weight: 700;
+            }
+        }
+//!===============================  Header end  ===============================//
+
+//?======================================   ======================================//
+
+//!===============================  Info start  ===============================//
+.page {
+    &__text1{
+            font-size: 57px;
+            color: #202020;
+            font-weight: 700;
+    }
+
+
+
+    &__text2 {
+        max-width: 650px;
+        font-size: 29px;
+        line-height: 1.5;
+        color: #4F4F4F;
+        
+    }
+
+
+
+}
+
+//!===============================  Info end  ===============================//
+
+//?======================================   ======================================//
+
+//!===============================  Services start  ===============================//
+
+.serv {
+    display: grid;
+    grid-template: 50% 50% /50% 50%;
+
+
+		// .serv__item
+
+		&__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 50px 111px 0;
+		}
+
+		// .serv__text
+
+		&__text {
+            flex-basis: calc(100% - 120px);
+            
+		}
+
+		// .serv__h3
+
+		&__h3 {
+            font-size: 28px;
+            font-weight: 400;
+		}
+
+		// .serv__p
+
+		&__p {
+            font-size: 14px;
+            color: #B2B2B2;
+            line-height: 1.5;
+            margin-right: 50px;
+		}
+}
+
+.img{
+    
+    flex-basis: 50%;
+    text-align: center;
+
+}
+
+
+
+//!===============================  Services end  ===============================//
+
+//?======================================   ======================================//
+
+//!===============================  Page start  ===============================//
+
+.page{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+
+    
+
+    &__text3 {
+        position: absolute;
+        top: -25px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #C2C2C2;
+        background-color: white;
+        padding: 5px 15px;
+        
+    }
+
+    &__btn {
+    background-color: #5528FF;
+    border-radius: 10px;
+    padding: 10px 45px;
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    border: none;
+    font-weight: 700;
+    }
+}
+
+.page-top {
+    border-top: 1px solid #C2C2C2;
+}
+//!===============================  Page end ===============================//
+
+//?======================================   ======================================//
+
+//!===============================  OUR CLIENTS start  ===============================//
+
+.clients {
+    display: grid;
+    grid-template: 100px 100px /repeat(4, 25%);
+    text-align: center;
+		
+
+	
+}
+
+//!"===============================  OUR CLIENTS end  ===============================//
+
+//?======================================   ======================================//
+
+//!"===============================  OUR TEAM start  ===============================//
+.team {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    text-align: center;
+    flex-direction: calc(100%-300px);
+    grid-row-gap: 40px;
+		
+
+		&__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+		}
+}
+
+
+//!"===============================  OUR TEAM end  ===============================//
+
+//?======================================   ======================================//
+
+//!"=============================== Footer start  ===============================//
+.footer {
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: #F7F7F7;
+    padding: 26px;
+}
+
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+.social {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    li{
+    margin-left: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: #B2B2B2;
+        font-size: 24px;
+    }
+
+
+}
+
+
+//!"===============================  Footer end  ===============================//
