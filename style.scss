@@ -12,14 +12,10 @@ $dark2: #4F4F4F;
 //!===============================  Wraper start  ===============================//
 
 .wrapper {
-    //ширина
-    width: 100%;
-    // максимальная ширина
-    max-width: 1186px;
-    //выравнивание по центру
-    margin: 0 auto;
-    //подключение шрифта
-    font-family: 'Ubuntu', sans-serif;
+    width: 100%; //ширина
+    max-width: 1186px; // максимальная ширина
+    margin: 0 auto; //выравнивание по центру
+    font-family: 'Ubuntu', sans-serif; //подключение шрифта
     
 //!===============================  Wraper end  ===============================//   
 
@@ -27,68 +23,60 @@ $dark2: #4F4F4F;
 
 //!===============================  Header start  ===============================//
 }
-.header {
-    
-    //делает эллементы блочными и выстраивает в строку 
-    display: flex;
-    //Равномерно распределите предметы. Первый элемент находится на одном уровне с началом, последний - на одном уровне с концом
-    justify-content: space-between;
-    //
-    box-sizing: border-box;
-    //
-    align-items: center;
-    //внутренний отступ 
-    padding: 0 15px 0 16px;
-    font-weight: 700;
-    padding-top: 53px;
+.header { 
+    display: flex; //делает эллементы блочными и выстраивает в строку
+    justify-content: space-between; //Равномерно распределите предметы. Первый элемент находится на одном уровне с началом, последний - на одном уровне с концом
+    box-sizing: border-box; // заставляет браузер учитывать границы (Рамку) и отступы (пэдинг)
+    align-items: center; // выравнивание эллементов по центру 
+    padding: 0 15px 0 16px;//внутренний отступ 
+    font-weight: 700; // установка начертания шрифта
+    padding-top: 53px; // внутренний отступ сверху эллемента
 
     
 }
 .logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    display: flex; //делает эллементы блочными и выстраивает в строку
+    align-items: center; // выравнивание эллементов по центру
+    text-decoration: none; //убирает нижнее подчёркивание
 
     &__img{
         
-        background-image: url(/img/Logo.svg);
-        display: block;
-        width: 58px;
-        height: 58px;
-        margin-right: 25px;      
+        background-image: url(../img/Logo.svg); // подгружает иконку
+        display: block; // делает эллемент блочным и видимым
+        width: 58px; // ширина
+        height: 58px; //высота
+        margin-right: 25px; // задает внешний отступ эллемента справа     
 }
 
     &__text{
-        font-size: 24px;
-        color: $dark; 
+        font-size: 24px; // задает кегель шрифта
+        color: $dark; // задает цвет текста
 
     }
 }
 .nav {
     
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-
-		// .nav__link
+    list-style-type: none; //убирает маркеры списка
+    display: flex; //делает эллементы блочными и выстраивает в строку
+    align-items: center; // выравнивание эллементов по центру 
 
 		&__link {
-        margin-left: 15px;
-        text-decoration: none;
-        font-size: 14px;
-        align-items: center;
+        margin-left: 15px; //внешний отступ с левого края 
+        text-decoration: none; // убирает нижнее подчёркивание
+        font-size: 14px; // задает кегель шрифта
+        align-items: center; // выравнивание эллементов по центру
 		}
 
         &__btn{
-            background-color: #5528FF;
-            border-radius: 5px;
-            padding: 10px 15px;
-            color: white;
-            margin-left: 15px;
-            text-decoration: none;
-            font-size: 14px;
-            border: none;
-            font-weight: 700;
+            background-color: #5528FF; // задает фоновой цвет эллемента
+            border-radius: 5px; //скругление границ блока
+            padding: 10px 15px; // внутренний отступ  1. верхняя и нижняя и 2. левая и правая стороны
+            color: white; //задает цвет тексту
+            margin-left: 15px; //внешний отступ слева
+            text-decoration: none; // убирает нижнее подчёркивание 
+            font-size: 14px; //задает кегель шрифта 
+            border: none; // обнуляет границы эллемента
+            font-weight: 700; // задает начертание шрифта
             }
         }
 //!===============================  Header end  ===============================//
@@ -98,18 +86,16 @@ $dark2: #4F4F4F;
 //!===============================  Info start  ===============================//
 .page {
     &__text1{
-            font-size: 57px;
-            color: #202020;
-            font-weight: 700;
+            font-size: 57px; // задает кегель шрифта
+            color: #202020; // задает цвет тексту
+            font-weight: 700; // задает начертание шрифта
     }
 
-
-
     &__text2 {
-        max-width: 650px;
-        font-size: 29px;
-        line-height: 1.5;
-        color: #4F4F4F;
+        max-width: 650px; // задает максимальную ширину текста
+        font-size: 29px; // задет кегель шрифта
+        line-height: 1.5; // задает местрочный интервал 
+        color: #4F4F4F; //задает цвет эллементу
         
     }
 
@@ -124,47 +110,38 @@ $dark2: #4F4F4F;
 //!===============================  Services start  ===============================//
 
 .serv {
-    display: grid;
-    grid-template: 50% 50% /50% 50%;
-
-
-		// .serv__item
+    display: grid; // задает сетку, определяющую столбцы и строки 
+    grid-template: 50% 50% /50% 50%; //задет параметры сетки где 1. это строки, 2. столбцы
 
 		&__item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            display: flex; // делает эллемент блочным и выстраивает в строку
+            justify-content: flex-start; // прижимает элемент к началу строки 
+            align-items: center; // выравнивание эллемента по центру
             padding: 0 50px 111px 0;
 		}
 
-		// .serv__text
-
 		&__text {
-            flex-basis: calc(100% - 120px);
+            flex-basis: calc(100% - 120px); //задает ширину элемента
             
 		}
 
-		// .serv__h3
-
 		&__h3 {
-            font-size: 28px;
-            font-weight: 400;
+            font-size: 28px; //задает кегель текста
+            font-weight: 400; // задает начертание текста
 		}
 
-		// .serv__p
-
 		&__p {
-            font-size: 14px;
-            color: #B2B2B2;
-            line-height: 1.5;
-            margin-right: 50px;
+            font-size: 14px; // задает кегель текста 
+            color: #B2B2B2; // задает цвет текста
+            line-height: 1.5; //задает межстрочный интервал 
+            margin-right: 50px; // задает отступ справа
 		}
 }
 
 .img{
     
-    flex-basis: 50%;
-    text-align: center;
+    flex-basis: 50%; // задает ширину эллеменат
+    text-align: center; //расположение текста по центру 
 
 }
 
@@ -177,38 +154,38 @@ $dark2: #4F4F4F;
 //!===============================  Page start  ===============================//
 
 .page{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position: relative;
+    padding-top: 40px; // задает верхний отступ 
+    padding-bottom: 40px; // внутренний нижний отступ 
+    position: relative; // делает элемент родительным относительног другого элеменат
 
     
 
     &__text3 {
-        position: absolute;
-        top: -25px;
-        font-size: 14px;
-        font-weight: 300;
-        color: #C2C2C2;
-        background-color: white;
-        padding: 5px 15px;
+        position: absolute; // позицианируется относиетльно родителя
+        top: -25px; // позицианирование по вертикали
+        font-size: 14px; // задает кегель шрифта
+        font-weight: 300; // задает начертание
+        color: #C2C2C2; // задает цвет элементу
+        background-color: white; // задает фоновой цвет элемента
+        padding: 5px 15px; // внутренний отступ по вертикали | по горизонтали
         
     }
 
     &__btn {
-    background-color: #5528FF;
-    border-radius: 10px;
-    padding: 10px 45px;
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 24px;
-    border: none;
-    font-weight: 700;
+    background-color: #5528FF; // задает фоновой цвет элемента
+    border-radius: 10px; // сгругляет углы
+    padding: 10px 45px; // внутренний отступ по вертикали | по горизонтали
+    color: white; // задает цвет 
+    margin-left: 15px; // внешний отступ слева
+    text-decoration: none; // убирает нижнее подчеркивание 
+    font-size: 24px; // кегель шрифта
+    border: none; // обнуляет границы эллемента
+    font-weight: 700; // начертание шриФТА
     }
 }
 
 .page-top {
-    border-top: 1px solid #C2C2C2;
+    border-top: 1px solid #C2C2C2; // верхняя часть рамки 
 }
 //!===============================  Page end ===============================//
 
@@ -217,9 +194,9 @@ $dark2: #4F4F4F;
 //!===============================  OUR CLIENTS start  ===============================//
 
 .clients {
-    display: grid;
-    grid-template: 100px 100px /repeat(4, 25%);
-    text-align: center;
+    display: grid; // задает сетку, определяющую столбцы и строки
+    grid-template: 100px 100px /repeat(4, 25%); //задет параметры сетки где 1. это строки, 2. столбцы
+    text-align: center; // расположение текста по центру 
 		
 
 	
@@ -231,17 +208,17 @@ $dark2: #4F4F4F;
 
 //!"===============================  OUR TEAM start  ===============================//
 .team {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    text-align: center;
-    flex-direction: calc(100%-300px);
-    grid-row-gap: 40px;
+    display: grid; // задает сетку, определяющую столбцы и строки
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr); //задет параметры сетки где 1. это строки, 2. столбцы
+    text-align: center; //расположение текста по центру 
+    flex-direction: calc(100%-300px); //размещение элементов определяя их главную ось
+    grid-row-gap: 40px; // настройка ширины отступов между строками 
 		
 
 		&__item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            display: flex; //делает эллементы блочными и выстраивает их в строку
+            justify-content: flex-start; // прижимает элемент к началу строки 
+            align-items: center; // выравнивание элемента по центру
 		}
 }
 
@@ -252,33 +229,33 @@ $dark2: #4F4F4F;
 
 //!"=============================== Footer start  ===============================//
 .footer {
-    bottom:0;
-    left:0;
-    width:100%;
-    background-color: #F7F7F7;
-    padding: 26px;
+    bottom:0; // прижимает к нижнему краю контейнера
+    left:0; // прижимает элемент к границе с лево
+    width:100%; // ширина
+    background-color: #F7F7F7; // фон изображения
+    padding: 26px; //внутренний отступ
 }
 
 
 .box-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; // делает элемент блочным и выстраивает его в строку
+    justify-content: space-between; // равномерно распределяет элементы при этом 1 и последний элемент прижимает к краям контейнера
+    align-items: center; // выравнивание элемента по центру
 
 
 
 }
 .social {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
+    list-style: none; // убирает все стили списка
+    padding-left: 0; // внутренний левый отстпуп
+    display: flex; // делает элемент блочным и выстраивает его в строку 
     li{
-    margin-left: 15px;
+    margin-left: 15px; // внешний  левый отспу 
     }
     a{
-        text-decoration: none;
-        color: #B2B2B2;
-        font-size: 24px;
+        text-decoration: none; // убирает нижнее подчёрквивание текста
+        color: #B2B2B2; // задает текст элементу
+        font-size: 24px; // кегель шрифта 
     }
 
 
